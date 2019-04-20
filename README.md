@@ -10,14 +10,11 @@ Create the FaceGate docker network
 docker network create facegate-net
 ```
 
-Pull or manually build from this repository FaceGate docker image
+Pull the FaceGate docker image
 
 ```bash
 # Pull
 docker pull facegate/api-gateway:latest
-
-# Build
-docker build -t facegate/api-gateway:latest .
 ```
 
 ## Usage
