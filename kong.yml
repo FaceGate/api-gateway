@@ -1,9 +1,9 @@
 _format_version: "1.1"
 
 services:
-  - name: mockbin-service
-    url: http://mockbin.org
+  - name: rekognizer
+    url: http://rekognizer-dev:8000
     routes:
-      - name: mockbin-route
+      - name: verify
         paths:
           - /

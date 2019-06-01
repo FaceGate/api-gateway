@@ -13,7 +13,6 @@ docker network create facegate-net
 Pull the FaceGate docker image
 
 ```bash
-# Pull
 docker pull facegate/api-gateway:latest
 ```
 
