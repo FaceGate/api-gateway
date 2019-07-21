@@ -10,3 +10,9 @@ services:
       - name: identify
         paths:
           - /
+  - name: user-manager
+    url: http://user-manager-dev:8000
+    routes:
+      - name: users
+        paths:
+          - /
