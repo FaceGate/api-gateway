@@ -19,3 +19,11 @@ services:
     paths:
     - /users
     strip_path: false
+  - name: groups
+    paths:
+    - /groups
+    strip_path: false
+  - name: areas
+    paths:
+    - /areas
+    strip_path: false
