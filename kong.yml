@@ -1,18 +1,21 @@
 _format_version: "1.1"
 
 services:
-  - name: rekognizer
-    url: http://rekognizer-dev:8000
-    routes:
-      - name: verify
-        paths:
-          - /
-      - name: identify
-        paths:
-          - /
-  - name: user-manager
-    url: http://user-manager-dev:8000
-    routes:
-      - name: users
-        paths:
-          - /
+- name: rekognizer
+  url: http://rekognizer-dev:8000
+  routes:
+  - name: identify
+    paths:
+    - /identify
+    strip_path: false
+  - name: verify
+    paths:
+    - /verify
+    strip_path: false
+- name: user-manager
+  url: http://user-manager-dev:8000
+  routes:
+  - name: users
+    paths:
+    - /users
+    strip_path: false
